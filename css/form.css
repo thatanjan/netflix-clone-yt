@@ -1,0 +1,64 @@
+.membership__form {
+	display: grid;
+	position: relative;
+}
+
+.membership__input__container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.membership__input {
+	flex-basis: 100%;
+	padding: 1rem;
+	padding-top: 2.5rem;
+	padding-bottom: 1.5rem;
+	border: none;
+	font-size: 1.6rem;
+}
+
+.membership__input:focus {
+	outline: none;
+}
+
+.membership__btn {
+	justify-self: center;
+	padding: 1.5rem 3rem;
+	cursor: pointer;
+	max-width: 20rem;
+	width: 100%;
+}
+
+.membership__input__message {
+	flex-basis: 100%;
+	text-align: start;
+	margin: 1rem 0;
+	color: #ffa00a;
+	font-size: 1.5rem;
+	content: '';
+}
+
+.membership__placeholder {
+	position: absolute;
+	top: 50%;
+	left: 1rem;
+	z-index: 10;
+	color: black;
+	transform: translateY(-50%);
+	font-size: 1.4rem;
+	color: #8c8c8c;
+	transition: all 0.3s ease-in-out;
+}
+
+.membership__input__container.on__focus .membership__placeholder {
+	top: 1rem;
+	font-size: 1.2rem;
+}
+
+.form__cta {
+	font-size: 1.6rem;
+	margin: 1rem 0;
+	font-weight: 600;
+	text-align: center;
+}

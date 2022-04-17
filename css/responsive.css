@@ -1,0 +1,82 @@
+@media screen and (min-width: 600px) {
+	.membership__btn {
+		font-size: 2rem;
+	}
+
+	.story__card__left h1 {
+		font-size: 4rem;
+		margin-bottom: 2rem;
+	}
+
+	.story__card__left h2 {
+		font-size: 2.2rem;
+	}
+
+	.tv__anime__container {
+		width: 50rem;
+		height: 38rem;
+	}
+
+	.tv__anime {
+		top: 3.5rem;
+		left: 6.6rem;
+		width: 37rem;
+		height: 29.5rem;
+	}
+
+	.faq__title {
+		font-size: 3.5rem;
+	}
+
+	.footer__link__container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.footer__link {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.banner__title {
+		font-size: 5rem;
+	}
+
+	.banner__subtitle {
+		font-size: 3rem;
+	}
+
+	.membership__form {
+		grid-template-columns: 70% 1fr;
+	}
+
+	.membership__input__message {
+		grid-row: 2;
+	}
+
+	.story__card {
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+
+	.story__card__left {
+		text-align: left;
+	}
+
+	.accordion__list {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.story__card__left h1 {
+		font-size: 5rem;
+	}
+
+	.story__card__left h2 {
+		font-size: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+}

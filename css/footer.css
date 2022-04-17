@@ -1,0 +1,28 @@
+.footer {
+	padding: 8rem 6rem 4rem;
+	/* border-top: 4px solid white; */
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.footer__link__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+.footer__link {
+	font-size: 1.3rem;
+	color: #757575;
+	text-transform: capitalize;
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+.footer__link.contact--link {
+	display: inline-block;
+	margin: 3rem 0;
+}

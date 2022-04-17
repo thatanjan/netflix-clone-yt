@@ -1,0 +1,54 @@
+.banner__section {
+	position: relative;
+	height: 100vh;
+}
+
+.banner__section .banner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	z-index: 5;
+}
+
+.banner__overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 0.8) 0,
+		rgba(0, 0, 0, 0.4) 40%,
+		rgba(0, 0, 0, 0.4) 75%,
+		rgba(0, 0, 0, 0.8) 100%
+	);
+	z-index: 10;
+}
+
+.banner__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	z-index: 15;
+	text-align: center;
+	padding: 0 5rem;
+	max-width: 900px;
+}
+
+.banner__title {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.banner__subtitle {
+	font-size: 2.6rem;
+	margin: 2rem 0;
+	font-weight: 400;
+}

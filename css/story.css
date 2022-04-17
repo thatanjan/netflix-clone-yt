@@ -1,0 +1,100 @@
+.story__card {
+	padding: 5rem 5%;
+	display: grid;
+	grid-row-gap: 1rem;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.story__card__right {
+	display: grid;
+	place-items: center;
+}
+
+.story__card__left {
+	text-align: center;
+}
+
+.story__card__left h1 {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.story__card__left h2 {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.tv__anime__container {
+	width: 30rem;
+	height: 23.4rem;
+	position: relative;
+}
+
+.tv__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.tv__anime {
+	position: absolute;
+	top: 0.8rem;
+	left: 4rem;
+	width: 22.1rem;
+	height: 21rem;
+}
+
+.download__container {
+	position: relative;
+}
+
+.download__container img {
+	width: 100%;
+	height: 100%;
+}
+
+.download__animation__container {
+	display: grid;
+	grid-template-columns: 4rem 1fr 5rem;
+	width: 60%;
+	height: 8rem;
+	align-items: center;
+	padding: 1rem;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	border-radius: 1rem;
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translateX(-50%);
+	background: black;
+}
+
+.download__animation__container .poster {
+	height: 90%;
+}
+.download__animation__container .download__gif {
+	height: 90%;
+}
+
+.download__animation__container .text__container {
+	padding-left: 2rem;
+}
+
+.download__animation__container .text__container .title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.download__animation__container .text__container .downloading {
+	font-size: 1.2rem;
+	color: #0071eb;
+}
+
+.story__card__right .kids__image {
+	width: 100%;
+}
