@@ -66,6 +66,10 @@
 	.accordion__list {
 		font-size: 3rem;
 	}
+
+	.membership__btn {
+		justify-self: start;
+	}
 }
 
 @media screen and (min-width: 1200px) {
