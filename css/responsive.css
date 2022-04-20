@@ -29,7 +29,7 @@
 	}
 
 	.footer__link__container {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.footer__link {
@@ -41,9 +41,8 @@
 	.banner__title {
 		font-size: 5rem;
 	}
-
 	.banner__subtitle {
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	.membership__form {
@@ -52,6 +51,10 @@
 
 	.membership__input__message {
 		grid-row: 2;
+	}
+
+	.membership__btn {
+		justify-self: start;
 	}
 
 	.story__card {
@@ -76,7 +79,4 @@
 	.story__card__left h2 {
 		font-size: 2.5rem;
 	}
-}
-
-@media screen and (min-width: 1600px) {
 }

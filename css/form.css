@@ -12,7 +12,7 @@
 .membership__input {
 	flex-basis: 100%;
 	padding: 1rem;
-	padding-top: 2.5rem;
+	padding-top: 2rem;
 	padding-bottom: 1.5rem;
 	border: none;
 	font-size: 1.6rem;
@@ -24,10 +24,9 @@
 
 .membership__btn {
 	justify-self: center;
-	padding: 1.5rem 3rem;
-	cursor: pointer;
-	max-width: 20rem;
 	width: 100%;
+	max-width: 20rem;
+	padding: 1.5rem 3rem;
 }
 
 .membership__input__message {
@@ -41,13 +40,12 @@
 
 .membership__placeholder {
 	position: absolute;
+	color: #8c8c8c;
 	top: 50%;
 	left: 1rem;
 	z-index: 10;
-	color: black;
 	transform: translateY(-50%);
 	font-size: 1.4rem;
-	color: #8c8c8c;
 	transition: all 0.3s ease-in-out;
 }
 
@@ -60,5 +58,4 @@
 	font-size: 1.6rem;
 	margin: 1rem 0;
 	font-weight: 600;
-	text-align: center;
 }

@@ -11,7 +11,6 @@ const membershipInputMessage = document.querySelector(
 const accordionQuestionEls = document.querySelectorAll('.accordion__question')
 
 const ON_FOCUS = 'on__focus'
-
 const FOCUS_IN = 'focusin'
 
 const validateEmail = (email) =>
@@ -33,28 +32,27 @@ const handleFocus = (e) => {
 	membershipInputContainer.classList.remove(ON_FOCUS)
 }
 
-if (membershipInput.value)
-	handleFocus({ target: membershipInputContainer, type: FOCUS_IN })
-
 const handleSubmit = (e) => {
 	e.preventDefault()
 
 	const { value } = membershipInput
 
-	if (validateEmail(value)) {
-		membershipInputMessage.innerHTML = 'Thank you for subscribing!'
+	const validEmail = validateEmail(value)
+
+	if (validEmail) {
+		membershipInputMessage.innerText = 'Thank you for subscribing!'
 		membershipInput.value = ''
 		membershipInputContainer.classList.remove(ON_FOCUS)
 	} else {
-		membershipInputMessage.innerHTML = 'Please enter a valid email'
+		membershipInputMessage.innerText = 'Please enter a valid email'
 	}
 
 	setTimeout(() => {
-		membershipInputMessage.innerHTML = ''
+		membershipInputMessage.innerText = ''
 	}, 3000)
 }
 
-membershipInput.addEventListener('focusin', handleFocus)
+membershipInput.addEventListener(FOCUS_IN, handleFocus)
 membershipInput.addEventListener('focusout', handleFocus)
 membershipForm.addEventListener('submit', handleSubmit)
 

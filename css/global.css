@@ -1,13 +1,15 @@
+:root {
+	--primary-color: #e50914;
+}
+
 .primary--btn {
-	background: var(--primary-color);
-	background-color: #e50914;
+	background-color: var(--primary-color);
 	line-height: normal;
 	padding: 0.7rem 1.7rem;
 	font-weight: 700;
 	font-size: 1.5rem;
 	border-radius: 0.3rem;
 	text-transform: capitalize;
-	color: white;
 }
 
 .section__divider {

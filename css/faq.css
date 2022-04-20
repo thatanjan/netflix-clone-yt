@@ -16,51 +16,49 @@
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 	display: grid;
-	grid-template-columns: 1fr;
 	grid-row-gap: 1rem;
 	font-size: 2rem;
 }
 
 .accordion {
-	--acordion-padding: 1.8rem;
-	--acordion-right-padding: 6rem;
+	--accordion-padding: 1.8rem;
+	--accordion-right-padding: 6rem;
 }
 
 .accordion__question {
-	background: #303030;
+	background-color: #303030;
 	display: block;
 	width: 100%;
 	text-align: left;
-	padding: var(--acordion-padding);
-	padding-right: var(--acordion-right-padding);
+	padding: var(--accordion-padding);
+	padding-right: var(--accordion-right-padding);
 	margin-bottom: 1px;
 	font-size: inherit;
 	position: relative;
 	cursor: pointer;
 }
 
-.accordion__answer {
-	background: #303030;
-	padding: var(--acordion-padding);
-	grid-column: 1 / -1;
-	display: none;
-}
-
 .accordion__question:after {
+	content: '+';
 	display: grid;
 	place-items: center;
-	height: 100%;
-	width: var(--acordion-right-padding);
 	position: absolute;
 	top: 0;
 	right: 0;
+	height: 100%;
+	width: var(--accordion-right-padding);
 	text-align: center;
 	font-size: 3rem;
-	content: '+';
 }
 
 .accordion.active .accordion__question:after {
 	content: '-';
+}
+
+.accordion__answer {
+	background-color: #303030;
+	padding: var(--accordion-padding);
+	display: none;
 }
 
 .accordion.active .accordion__answer {

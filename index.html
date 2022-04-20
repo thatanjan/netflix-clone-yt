@@ -5,27 +5,26 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Netflix Clone</title>
 		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/variables.css" />
-		<link rel="stylesheet" href="./css/global.css" />
-		<link rel="stylesheet" href="./css/form.css" />
-		<link rel="stylesheet" href="./css/banner.css" />
 		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/banner.css" />
+		<link rel="stylesheet" href="./css/form.css" />
 		<link rel="stylesheet" href="./css/story.css" />
-		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/faq.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 		<link rel="stylesheet" href="./css/responsive.css" />
 	</head>
 	<body>
 		<header class="header">
 			<a class="header__logo" href="#">
-				<img src="./media/netflix.svg" alt="Netflix" />
+				<img src="./media/netflix.svg" alt="" />
 			</a>
 
-			<a class="sign__in__btn primary--btn" href="#">Sign In</a>
+			<a class="sign__in__btn primary--btn" href="#"> Sign in </a>
 		</header>
 
 		<section class="banner__section">
-			<img class="banner" src="media/banner.jpg" alt="" />
+			<img class="banner" src="./media//banner.jpg" alt="" />
 			<div class="banner__overlay"></div>
 
 			<div class="banner__content">
@@ -38,10 +37,11 @@
 
 				<form class="membership__form">
 					<div class="membership__input__container">
-						<input class="membership__input" type="email" value="ts@gmail.com" />
+						<input class="membership__input" type="email" />
 						<label class="membership__placeholder" for="email">Email</label>
 					</div>
 					<label class="membership__input__message"> </label>
+
 					<button class="membership__btn primary--btn" type="submit">
 						Get started
 					</button>
@@ -52,19 +52,20 @@
 		<hr class="section__divider" />
 
 		<div class="story__card__container">
-			<!-- Story one -->
-
 			<section class="story__card">
 				<div class="story__card__left">
 					<h1>Enjoy on your TV.</h1>
+
 					<h2>
 						Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray
 						players, and more.
 					</h2>
 				</div>
+
 				<div class="story__card__right">
 					<div class="tv__anime__container">
 						<img class="tv__img" src="media/tv.png" alt="" />
+
 						<video
 							autoplay
 							muted
@@ -78,13 +79,13 @@
 
 			<hr class="section__divider" />
 
-			<!-- Story two -->
-
 			<section class="story__card">
 				<div class="story__card__left">
 					<h1>Download your shows to watch offline.</h1>
+
 					<h2>Save your favorites easily and always have something to watch.</h2>
 				</div>
+
 				<div class="story__card__right">
 					<div class="download__container">
 						<img src="media/mobile.jpg" alt="" />
@@ -97,15 +98,13 @@
 								<p class="downloading">Downloading...</p>
 							</div>
 
-							<img class="download__gif" src="media/download-icon.gif" alt="" />
+							<img src="media/download-icon.gif" class="download__gif" alt="" />
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<hr class="section__divider" />
-
-			<!-- Story three -->
 
 			<section class="story__card">
 				<div class="story__card__left">
@@ -119,8 +118,6 @@
 
 			<hr class="section__divider" />
 
-			<!-- Story four -->
-
 			<section class="story__card">
 				<div class="story__card__left">
 					<h1>Create profiles for kids.</h1>
@@ -129,44 +126,45 @@
 						just for them—free with your membership.
 					</h2>
 				</div>
+
 				<div class="story__card__right">
-					<img class="kids__image" src="/media/kids.png" alt="" />
+					<img class="kids__image" src="media/kids.png" alt="" />
 				</div>
 			</section>
 
-			<section class="faq">
-				<h2 class="faq__title">Frequently Asked Questions</h2>
-
-				<ul class="accordion__list">
-					<li class="accordion">
-						<button class="accordion__question">
-							Adipisicing aut laborum deserunt necessitatibus nihil?
-						</button>
-
-						<p class="accordion__answer">
-							Amet laudantium alias earum molestiae adipisci! Ullam beatae deserunt
-							voluptatem debitis ipsa Maiores delectus quibusdam nemo odio labore.
-							Voluptas dolor.
-						</p>
-					</li>
-
-					<li class="accordion">
-						<button class="accordion__question">
-							Adipisicing impedit repudiandae?
-						</button>
-						<p class="accordion__answer">
-							Amet laudantium alias earum molestiae adipisci! Ullam beatae deserunt
-							Voluptas dolor.
-						</p>
-					</li>
-				</ul>
-			</section>
+			<hr class="section__divider" />
 		</div>
+
+		<section class="faq">
+			<h2 class="faq__title">Frequently Asked Questions</h2>
+
+			<ul class="accordion__list">
+				<li class="accordion">
+					<button class="accordion__question">
+						Consectetur ipsum error eaque ipsa?
+					</button>
+
+					<p class="accordion__answer">
+						Elit possimus error sunt aperiam quibusdam? Numquam similique quia eum.
+					</p>
+				</li>
+
+				<li class="accordion">
+					<button class="accordion__question">
+						Consectetur ipsum error eaque ipsa?
+					</button>
+
+					<p class="accordion__answer">
+						Elit possimus error sunt aperiam quibusdam? Numquam similique quia eum.
+					</p>
+				</li>
+			</ul>
+		</section>
 
 		<hr class="section__divider" />
 
 		<footer class="footer">
-			<a class="footer__link contact--link" href="#">Questions? Contact us.</a>
+			<a class="footer__link contact--link" href="#"> Questions? Contact Us. </a>
 
 			<div class="footer__link__container">
 				<a class="footer__link" href="#">FAQ</a>
@@ -186,7 +184,6 @@
 				<a class="footer__link" href="#">Cookie Preferences</a>
 			</div>
 		</footer>
-
 		<script src="js/index.js"></script>
 	</body>
 </html>

@@ -6,11 +6,6 @@
 	margin: 0 auto;
 }
 
-.story__card__right {
-	display: grid;
-	place-items: center;
-}
-
 .story__card__left {
 	text-align: center;
 }
@@ -19,10 +14,14 @@
 	font-size: 3rem;
 	margin-bottom: 1rem;
 }
-
 .story__card__left h2 {
 	font-size: 1.8rem;
 	font-weight: 600;
+}
+
+.story__card__right {
+	display: grid;
+	place-items: center;
 }
 
 .tv__anime__container {
@@ -62,14 +61,14 @@
 	grid-template-columns: 4rem 1fr 5rem;
 	width: 60%;
 	height: 8rem;
-	align-items: center;
 	padding: 1rem;
+	align-items: center;
 	border: 2px solid rgba(255, 255, 255, 0.25);
 	border-radius: 1rem;
 	position: absolute;
 	left: 50%;
-	bottom: 5%;
 	transform: translateX(-50%);
+	bottom: 5%;
 	background: black;
 }
 
@@ -78,10 +77,6 @@
 }
 .download__animation__container .download__gif {
 	height: 90%;
-}
-
-.download__animation__container .text__container {
-	padding-left: 2rem;
 }
 
 .download__animation__container .text__container .title {
@@ -95,6 +90,10 @@
 	color: #0071eb;
 }
 
-.story__card__right .kids__image {
+.download__animation__container .text__container {
+	padding-left: 2rem;
+}
+
+.kids__image {
 	width: 100%;
 }
